@@ -28,7 +28,7 @@ Esto me ayudó a, sin ver el código, tener una visión general del proyecto. Ya
 
 \section{Tercera semana}
 
-En esta tercera semana comencé con una tarea sencilla de desarrollo, además aprendí a utilizar \textit{RubyMine} ya que la empresa compra licencias de este IDE (Entorno de Desarrollo Integrado, del inglés \textit{Integrated Development Environment}) que cuenta con muchas funcionalidades que hacen más sencillo el seguimiento de la traza por donde se ejecuta el programa entre todos los distintos ficheros. Además de tener una integración total con \textit{Git}, lo que permite ver quién hizo qué cambio en cada línea para ir a preguntar directamente a ese compañero si surge alguna duda al respecto.
+En esta tercera semana comencé con una tarea sencilla de desarrollo, además aprendí a utilizar \textit{RubyMine} ya que la empresa compra licencias de este \textit{IDE} (Entorno de Desarrollo Integrado, del inglés \textit{Integrated Development Environment}) que cuenta con muchas funcionalidades que hacen más sencillo el seguimiento de la traza por donde se ejecuta el programa entre todos los distintos ficheros. Además de tener una integración total con \textit{Git}, lo que permite ver quién hizo qué cambio en cada línea para ir a preguntar directamente a ese compañero si surge alguna duda al respecto.
 
 Mi objetivo con esta tarea era crear un nuevo tipo de estación, lo que permitiría especificar funcionalidades para éstas. Mis conocimientos en asignaturas como Programación y Diseño Orientado a Objetos, Sistemas de Información Basados en Web del grado o Sistemas Software Basados en Web del máster me fueron de mucha utilidad para llevar a cabo esta tarea.
 
@@ -44,6 +44,16 @@ Aún así, no pudimos comprobar el cálculo para un tipo de contador específico
 
 Durante esta semana realicé pasé de trabajar en el \textit{back-end} del proyecto al \textit{front-end} arreglando las hojas de estilo de la web \textit{responsive} para dispositivos más pequeños pues había varias inconsistencias.
 
-Una vez terminado esto, pasé de nuevo al \textit{back-end} con una tarea que consistía en exportar los informes de las estaciones al formato XLSX (el formato estándar de hojas de cálculo de \textit{Microsoft Excel}) usando la gema \textit{axlsx\_rails}. No obstante tuve problemas a la hora de exportar a este tipo de archivo binario, pues los archivos generados con esta gema se encontraban corruptos y no podían ser abiertos.
+Una vez terminado esto, pasé de nuevo al \textit{back-end} con una tarea que consistía en exportar los informes de las estaciones al formato \textit{XLSX} (el formato estándar de hojas de cálculo de \textit{Microsoft Excel}) usando la gema \textit{axlsx\_rails}. No obstante tuve problemas a la hora de exportar a este tipo de archivo binario, pues los archivos generados con esta gema se encontraban corruptos y no podían ser abiertos.
 
-Los últimos días de la semana los aproveché para realizar un tutorial de \textit{Angular}, pues era una tecnología que iba a hacer falta para un futuro proyecto. El tutorial que seguí fue el que aportaba la web oficial de \textit{Angular} y el código generado lo subí a un repositorio de GitHub: \href{https://github.com/fblupi/tour-of-heroes}{fblupi/tour-of-heroes}.
+Los últimos días de la semana los aproveché para realizar un tutorial de \textit{Angular} \cite{angular}, pues era una tecnología que iba a hacer falta para un futuro proyecto. El tutorial que seguí fue el que aportaba la web oficial de \textit{Angular} y el código generado lo subí a un repositorio de \textit{GitHub}: \href{https://github.com/fblupi/tour-of-heroes}{fblupi/tour-of-heroes}.
+
+\section{Sexta semana}
+
+Durante la sexta semana continué combinando tutoriales de nuevas tecnologías con desarrollo.
+
+Esta vez, la tecnología era \textit{ReactJS} \cite{youtube-react} y los resultados del tutorial los guardé en un repositorio de \textit{GitHub}: \href{https://github.com/fblupi/baby-names}{fblupi/baby-names}.
+
+También estuve haciendo pruebas de un componente de la web de un proyecto que se iba a desplegar en breves y era necesario buscar todos los fallos posibles para resolverlos y que no estuviesen presentes en producción.
+
+Los últimos días de la semana retomé el trabajo que había dejado a medias de la generación de informes en formato \textit{XLSX} y conseguí resolverlo actualizando la forma de realizar la petición pues al hacerlo anteriormente vía \textit{AJAX}, al método que se llamaba en caso de éxito le llegaba bien el archivo, pero a la hora de hacerlo descargable por el navegador se corrompía. Al hacer una llamada directamente al controlador de \textit{Rails} con el formato \textit{XLSX} este pasaba a descargarse automáticamente sin tener que procesarse de nuevo.
