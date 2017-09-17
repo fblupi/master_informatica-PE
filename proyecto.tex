@@ -141,11 +141,13 @@ pdfproducer = {pdflatex}
 
 \usepackage{pdfpages}
 \begin{document}
+
 \input{portada/portada}
 \frontmatter
 \tableofcontents
 
-
+\mainmatter
+\setlength{\parskip}{5pt}
 \input{capitulos/introduccion}
 \input{capitulos/descripcion_empresa}
 \input{capitulos/trabajo_realizado}
